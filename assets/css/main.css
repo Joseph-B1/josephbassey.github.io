@@ -3953,28 +3953,29 @@ input, select, textarea {
 		}
 
 /* Flex layout for contact section */
-.contact-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	gap: 2rem;
+#footer .split {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-align: left;
 }
 
-/* Each item takes up roughly equal space */
-.contact-container section {
-	flex: 1 1 22%;
-	min-width: 220px;
+#footer .contact-method {
+  flex: 1 1 22%;
+  min-width: 220px;
 }
 
-/* Stack vertically on mobile */
+/* Stack vertically and align left on mobile */
 @media screen and (max-width: 736px) {
-	.contact-container {
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	}
+  #footer .split {
+    flex-direction: column;
+    align-items: flex-start; /* Left alignment */
+  }
 
-	.contact-container section {
-		width: 100%;
-	}
+  #footer .contact-method {
+    width: 100%;
+    text-align: left; /* Keep text left-aligned */
+    margin-bottom: 1.5em;
+  }
 }
+
