@@ -3951,29 +3951,57 @@ input, select, textarea {
 			visibility: visible;
 		}
 
-/* Flex layout for contact section */
+/* Contact: horizontal on desktop, vertical-left on mobile */
+
+/* Base container: horizontal layout */
 .contact-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	gap: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* distribute space */
+  gap: 2rem;                       /* gutter between items */
+  align-items: flex-start;         /* align top of each tile */
+  margin: 1.5rem 0;
+  box-sizing: border-box;
 }
 
-/* Each item takes up roughly equal space */
-.contact-container section {
-	flex: 1 1 22%;
-	min-width: 220px;
+/* Each item: take up approx 1/4 of available width, but never smaller than min-width */
+.contact-container > .contact-item {
+  flex: 1 1 calc((100% - (3 * 2rem)) / 4); /* 4 columns; subtract gaps */
+  min-width: 220px;
+  box-sizing: border-box;
 }
 
-/* Stack vertically on mobile */
+/* Content inside each item - ensure left alignment by default */
+.contact-container .contact-method {
+  text-align: left;
+}
+
+/* Mobile: stack vertically and keep left alignment */
 @media screen and (max-width: 736px) {
-	.contact-container {
-		flex-direction: column;
-		align-items: center;
-		text-align: center;
-	}
+  .contact-container {
+    flex-direction: column;
+    align-items: flex-start;  /* left-align the stacked items */
+    gap: 1rem;
+  }
 
-	.contact-container section {
-		width: 100%;
-	}
+  .contact-container > .contact-item {
+    width: 100%;
+    flex: none;               /* prevent flex shrinking/growing */
+    min-width: 0;
+    margin-bottom: 0.75rem;
+  }
+
+  /* make icons a little smaller on mobile (optional) */
+  .contact-container .contact-method .icon {
+    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+  }
 }
+
+/* If your theme still overrides layout, use a higher-specificity rule or the !important fallback */
+/* Example: uncomment if needed (use sparingly) */
+/*
+.contact-container {
+  display: flex !important;
+}
+*/
