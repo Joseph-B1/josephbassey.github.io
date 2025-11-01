@@ -5,7 +5,6 @@
 	Forty by HTML5 UP
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
-
 */
 
 html, body, div, span, applet, object,
@@ -3966,21 +3965,15 @@ input, select, textarea {
 	min-width: 220px;
 }
 
-/* Stack vertically on mobile (aligned left) */
+/* Stack vertically on mobile */
 @media screen and (max-width: 736px) {
 	.contact-container {
 		flex-direction: column;
-		align-items: flex-start; /* Left align items */
-		text-align: left;        /* Left align text */
+		align-items: center;
+		text-align: center;
 	}
 
 	.contact-container section {
 		width: 100%;
-		margin-bottom: 1.5em;    /* Add space between items */
 	}
 }
-
-
-
-
-
