@@ -1,177 +1,99 @@
-<!DOCTYPE html>
+<!DOCTYPE HTML>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Joseph Bassey | Data Analyst Portfolio</title>
-  <style>
-    body {
-      font-family: "Segoe UI", Arial, sans-serif;
-      margin: 0;
-      background-color: #f8fafc;
-      color: #111827;
-      scroll-behavior: smooth;
-    }
-
-    /* Navbar */
-    nav {
-      background: #0f766e;
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-      padding: 15px;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    nav a:hover { text-decoration: underline; }
-
-    /* Hero Section */
-    .hero {
-      background: linear-gradient(135deg, #0f766e, #14b8a6);
-      color: white;
-      text-align: center;
-      padding: 80px 20px;
-    }
-    .hero h1 { font-size: 2.4rem; margin-bottom: 10px; }
-    .hero p { font-size: 1.2rem; }
-
-    /* Sections */
-    section {
-      max-width: 1000px;
-      margin: 60px auto;
-      padding: 0 20px;
-    }
-    section h2 {
-      color: #0f766e;
-      border-bottom: 3px solid #0f766e;
-      display: inline-block;
-      padding-bottom: 5px;
-      margin-bottom: 20px;
-    }
-
-    /* Projects grid */
-    .projects {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
-    }
-    .card {
-      background: white;
-      border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-      overflow: hidden;
-      transition: transform 0.2s ease;
-    }
-    .card:hover { transform: translateY(-5px); }
-    .card img {
-      width: 100%;
-      height: 160px;
-      object-fit: cover;
-    }
-    .card-body {
-      padding: 15px;
-    }
-    .card-body h3 {
-      color: #0f766e;
-      margin-top: 0;
-    }
-
-    /* Contact section */
-    .contact p {
-      font-size: 1.05rem;
-      margin: 6px 0;
-    }
-
-    /* Footer */
-    footer {
-      background: #0f766e;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      margin-top: 40px;
-    }
-
-    a { color: #0f766e; }
-  </style>
+    <title>Joseph Bassey | Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="assets/css/main.css" />
 </head>
-<body>
+<body class="is-preload">
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#home">HOME</a>
-    <a href="about.html">ABOUT</a>
-    <a href="#projects">PROJECTS</a>
-    <a href="#contact">CONTACT</a>
-  </nav>
+    <!-- Header -->
+    <header id="header">
+        <a href="index.html" class="logo">Joseph Bassey</a>
+        <nav>
+            <a href="#menu">Menu</a>
+        </nav>
+    </header>
 
-  <!-- Hero / Home -->
-  <header id="home" class="hero">
-    <h1>Joseph Bassey</h1>
-    <p>Data Analyst | Excel · SQL · Python · Power BI</p>
-  </header>
+    <!-- Navigation Menu -->
+    <nav id="menu">
+        <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
+        </ul>
+    </nav>
 
-  <!-- About -->
-  <section id="about">
-    <h2>ABOUT</h2>
-    <p>
-      I’m a Data Analyst with a background in Mechanical Engineering and certifications in Project Management, 
-      Virtual Assistance, and Travel Management. I specialize in data cleaning, analysis, and visualization using 
-      Excel, SQL, Power BI, and Python. My mission is to transform raw data into insights that guide smarter decisions.
-    </p>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects">
-    <h2>PROJECTS</h2>
-
-    <div class="projects">
-      <div class="card">
-        <img src="https://via.placeholder.com/400x200?text=Travel+Data+Insights" alt="Travel Data Insights">
-        <div class="card-body">
-          <h3>Travel Data Insights</h3>
-          <p>Analyzed 5 years of booking data to identify seasonal patterns and post-COVID travel recovery trends.</p>
-          <p><strong>Tools:</strong> Excel, Power BI</p>
+    <!-- Hero Section -->
+    <section id="banner">
+        <div class="inner">
+            <h1>Hi, I'm Joseph Bassey</h1>
+            <p>Data Analytics & Tech Enthusiast<br />
+            Exploring insights and building projects.</p>
+            <ul class="actions stacked">
+                <li><a href="projects.html" class="button fit primary">View My Projects</a></li>
+            </ul>
         </div>
-      </div>
+    </section>
 
-      <div class="card">
-        <img src="https://via.placeholder.com/400x200?text=Sales+Dashboard" alt="Sales Dashboard">
-        <div class="card-body">
-          <h3>Sales Performance Dashboard</h3>
-          <p>Developed an interactive Power BI dashboard to visualize sales performance by region and category.</p>
-          <p><strong>Tools:</strong> SQL, Power BI</p>
+    <!-- Intro Section -->
+    <section id="intro" class="wrapper style1">
+        <div class="inner">
+            <header class="major">
+                <h2>Welcome to My Portfolio</h2>
+            </header>
+            <p>This portfolio showcases my journey in data analytics, project work, and technical skills. Explore projects, insights, and updates here.</p>
+            <ul class="actions">
+                <li><a href="about.html" class="button">Learn More About Me</a></li>
+            </ul>
         </div>
-      </div>
+    </section>
 
-      <div class="card">
-        <img src="https://via.placeholder.com/400x200?text=Customer+Segmentation" alt="Customer Segmentation">
-        <div class="card-body">
-          <h3>Customer Segmentation</h3>
-          <p>Applied clustering in Python to categorize customers and improve marketing focus.</p>
-          <p><strong>Tools:</strong> Python (pandas, scikit-learn)</p>
+    <!-- Featured Section / Placeholder -->
+    <section id="features" class="wrapper style2">
+        <div class="inner">
+            <header class="major">
+                <h2>Featured Work</h2>
+                <p>Here are some highlights of my recent projects. More details in the Projects page.</p>
+            </header>
+            <div class="features">
+                <section>
+                    <span class="icon solid major fa-chart-bar"></span>
+                    <h3>Data Analytics</h3>
+                    <p>Analyzing raw datasets and deriving actionable insights for real-world applications.</p>
+                </section>
+                <section>
+                    <span class="icon solid major fa-code"></span>
+                    <h3>Web & Tools</h3>
+                    <p>Creating interactive dashboards, scripts, and automation tools to simplify complex tasks.</p>
+                </section>
+                <section>
+                    <span class="icon solid major fa-briefcase"></span>
+                    <h3>Projects</h3>
+                    <p>Hands-on projects demonstrating problem-solving, analytics, and data visualization skills.</p>
+                </section>
+            </div>
         </div>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Contact -->
-  <section id="contact" class="contact">
-    <h2>CONTACT</h2>
-    <p>📧 Email: <a href="mailto:josephbasseyokon@gmail.com">josephbasseyokon@gmail.com</a></p>
-    <p>🔗 LinkedIn: <a href="https://www.linkedin.com/in/joseph-bassey-okon" target="_blank">linkedin.com/in/joseph-bassey-okon</a></p>
-    <p>💻 GitHub: <a href="https://github.com/joseph-b1" target="_blank">github.com/joseph-b1</a></p>
-    <p>📍 Lagos State, Nigeria</p>
-  </section>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="inner">
+            <ul class="icons">
+                <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                <li><a href="#" class="icon brands fa-linkedin"><span class="label">LinkedIn</span></a></li>
+            </ul>
+            <ul class="copyright">
+                <li>&copy; 2025 Joseph Bassey. All rights reserved.</li>
+            </ul>
+        </div>
+    </footer>
 
-  <footer>
-    <p>© 2025 Joseph Bassey | Data with MeteHive</p>
-  </footer>
-
-</body>
-</html>
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main
