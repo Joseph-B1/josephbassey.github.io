@@ -1,0 +1,214 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Walmart - Power BI Dashboard</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<a href="index.html" class="logo"><strong>Data Analyst Portfolio</strong> <span>by Joseph Bassey</span></a>
+						<nav>
+							<a href="#menu">Menu</a>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="index.html">Home</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#footer">Contact</a></li>
+						 <div class="dropup">
+							<button class="dropbtn">Portfolio Projects</button>
+							  <div class="dropup-content">
+									<a href="excel.html">Excel</a>
+									<a href="sql.html">SQL</a>
+									<a href="https://public.tableau.com/app/profile/joseph.bassey.okon" target="_blank" class="link">Tableau</a>
+									<a href="powerbi.html">Power BI</a>
+							</div>
+						 </div>	
+					</ul>						
+				</nav>
+
+
+				<!-- Main -->
+					<div id="main" class="alt">
+						
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<header class="major">
+										<h1>Walmart Dashboard: Analyzing Sales Forecasting</h1>
+									</header>
+									<!--<span class="image main"><img src="images/pic11.jpg" alt="" /></span> -->
+									<h2>Goal</h2>
+									<p>The Walmart Dashboard project aims to analyze historical Walmart store sales data from 2010–2012, identify key sales patterns, understand the impact of holidays and external factors (like weather, fuel price, CPI, and unemployment), and forecast future weekly sales to support better business decision-making.</p>
+									<a href="https://github.com/Joseph-B1/data-analysis-project/blob/main/walmart.pbix" target="_blank">Download from GitHub!</a>
+									<p></p>
+
+									<h2>Background Information</h2>
+									<p>The dataset covers weekly sales for multiple Walmart stores from February 5, 2010 to November 1, 2012.</p>
+
+                  <p>It contains the following fields:</p>
+                  <ul>
+                      <li><strong>Store:</strong> Store number</li>
+                      <li><strong>Date:</strong> Week of sales</li>
+                      <li><strong>Weekly_Sales:</strong> Sales for that week</li>
+                      <li><strong>Holiday_Flag:</strong> 1 = Holiday week, 0 = Non-holiday week</li>
+                      <li><strong>Temperature:</strong> Temperature on the day of sale</li>
+                      <li><strong>Fuel_Price:</strong> Fuel cost in the region</li>
+                      <li><strong>CPI:</strong> Consumer Price Index</li>
+                      <li><strong>Unemployment:</strong> Unemployment rate</li>
+                    </ul>
+
+                      <p>Special holiday events in the dataset:</p>
+                      <ul>
+                        <li>Super Bowl</li>
+                        <li>Labour Day</li>
+                        <li>Thanksgiving</li>
+                        <li>Christmas</li>
+                      </ul>
+									
+									<p></p>
+
+
+									<h2>Setup</h2>
+									<p>The first step in the project involved data cleaning to ensure accurate analysis. This included trimming text columns to avoid potential biases in the dataset. To facilitate better visualization of the data, I added a conditional column for clarity on the holiday label. Furthermore, I verified that there was no missing data and that each field had the correct data type using Power BI's query tool.</p>
+									<img src="images/powerquery.png" alt="Walmart Data during transformation" style="width:1000px;height:500px;" data-position="center center" />
+									<p><i>Fig 1. This image shows the dataset after it was transformed.</i></p>
+									<p>These steps were essential to ensure that the data was properly formatted for analysis and would yield accurate results.</p>
+
+                  <p>The second step in the project involved loading the data for further analysis. This also included using measures for conditional column, and calculated table for the dimension date.</p>
+									<img src="images/powerbi.png" alt="Walmart Data after loading" style="width:1000px;height:500px;" data-position="center center" />
+									<p><i>Fig 2. This image shows the dataset after it was loaded.</i></p>
+									<p>These steps were essential to prepare the data for visualization and dashboard interactions</p>
+									
+									<h2>Dashboard Design and Creation.</h2>
+									<p>With the cleaned and transformed Walmart sales dataset, I developed an interactive retail analytics dashboard that highlights key performance insights across stores and product categories. The dashboard includes visualizations showing sales trends by store, department, holiday events, and seasonal patterns, giving a clear picture of factors influencing revenue. These visual insights provide a comprehensive understanding of sales behavior across different time periods and store locations, enabling data-driven decision-making for inventory planning, promotions, and demand forecasting.</p>
+									
+									
+									<img src="images/bidashboard.png" alt="Walmart Dashboard" style="width:1000px;height:500px;" data-position="center center" />
+									<p><i>Fig 2. This image shows the HR Analytics Dashboard.</i></p>
+
+									<p>In addition to creating the key visuals for the Walmart sales dashboard, I also added several slicers to make the report more interactive and user-driven. These slicers allow users to filter the data by store, department, year, month, and holiday periods. This added level of interactivity helps users explore specific segments of the data, compare performance across time periods or locations, and uncover deeper insights that would not be visible from static charts alone.</p>
+
+
+
+									<h2>Conclusion</h2>
+									<ul>
+  <li>Walmart sales show seasonal patterns and holiday spikes, with notable increases during major holidays like Thanksgiving and Christmas.</li>
+  <li>Top-performing stores consistently contribute the most to total sales, while weaker stores may need targeted attention.</li>
+  <li>External factors such as fuel price, temperature, CPI, and unemployment have measurable but varying impacts on sales.</li>
+  <li>The forecasted sales provide insight for inventory planning, staffing, and promotional strategies.</li>
+</ul>
+
+<p>This dashboard enables Walmart management to make data-driven decisions, optimize store performance, and plan for high-demand periods.</p>
+
+
+									
+								</div>
+							</section>
+                        
+					</div>
+
+				<!-- Contact -->
+					<!--<section id="contact">
+						<div class="inner">
+							<section>
+								<form method="post" action="#">
+									<div class="fields">
+										<div class="field half">
+											<label for="name">Name</label>
+											<input type="text" name="name" id="name" />
+										</div>
+										<div class="field half">
+											<label for="email">Email</label>
+											<input type="text" name="email" id="email" />
+										</div>
+										<div class="field">
+											<label for="message">Message</label>
+											<textarea name="message" id="message" rows="6"></textarea>
+										</div>
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<li><input type="reset" value="Clear" /></li>
+									</ul>
+								</form>
+							</section>
+							<section class="split">
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-envelope"></span>
+										<h3>Email</h3>
+										<a href="#">information@untitled.tld</a>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-phone"></span>
+										<h3>Phone</h3>
+										<span>(000) 000-0000 x12387</span>
+									</div>
+								</section>
+								<section>
+									<div class="contact-method">
+										<span class="icon solid alt fa-home"></span>
+										<h3>Address</h3>
+										<span>1234 Somewhere Road #5432<br />
+										Nashville, TN 00000<br />
+										United States of America</span>
+									</div>
+								</section>
+							</section>-->
+						</div>
+					</section>
+
+				<!-- Footer -->
+				<section class="split">
+					<section>
+						<h4>Contact Information</h4>															
+					</section>
+				</section>
+			</div>
+									<!-- Footer -->
+									<footer id="footer">
+										<div class="inner">
+											<ul class="icons">
+												<li><a href="mailto:josephbassey65@gmail.com" target="_blank" class="icon solid alt fa-envelope"><span class="label">Twitter</span></a></li>
+												<li><a href="https://github.com/joseph-b1" target="_blank" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="http://www.linkedin.com/in/joseph-bassey-a21792282" target="_blank" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+											<ul class="copyright">
+												<li>&copy; 2025 Joseph Bassey</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+											</ul>
+										</div>
+									</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
